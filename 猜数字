@@ -1,0 +1,19 @@
+import random #初学者自学写的
+wt = 4
+n = random.randint(1,10)
+guess = input("猜数字，1-10：")
+guess =int(guess)
+if guess == n:
+  print("true")
+while (guess != n) and (wt > 0):
+    guess =input("false，重新输入：")
+    guess = int(guess)
+    wt = wt - 1
+    if guess > n:
+        print("大了")
+    else:
+        print("小了")
+    if wt > 0:
+        print("再试一次")
+    else:
+        print("没机会了")
